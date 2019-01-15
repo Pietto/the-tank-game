@@ -219,28 +219,28 @@ body{
 	transition: 1s;
 	opacity: 0.0;
 }
-#lowerplateE50m:hover,#sideplatee50m:hover,#upperplatee50m:hover{
-	transition: 1s;
-	opacity: 1.0;
-}
 #turretplateE50m{
 	position: relative;
-	top: 0px;
-	left: 0px;
+	top: 2px;
+	left: 880px;
 	transition: 1s;
-	opacity: 1.0;
+	opacity: 0.0;
 }
 #sideplateE50m{
 	position: relative;
-	top: 0px;
-	left: 0px;
+	top: 120px;
+	left: 565px;
 	transition: 1s;
-	opacity: 1.0;
+	opacity: 0.0;
 }
 #upperplateE50m{
 	position: relative;
-	top: 0px;
-	left: 0px;
+	top: 100px;
+	left: 470px;
+	transition: 1s;
+	opacity: 0.0;
+}
+#lowerplateE50m:hover,#sideplatee50m:hover,#upperplatee50m:hover,#turretplateE50m:hover,#sideplateE50m:hover,#upperplateE50m:hover{
 	transition: 1s;
 	opacity: 1.0;
 }

@@ -43,6 +43,7 @@ var x = 1;
 var b = 0;
 
 var hp=3;
+var pen=Math.random();
 
 function continue1(){
 	x=x+1;
@@ -500,37 +501,99 @@ function e50mlowerplateshot(){
 	var hp = hp-1;
 
 	//loading the armor model
-	var turretplateE50m = document.createElement("IMG");
-	turretplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/front-turret-plate-e50m.png");
-	turretplateE50m.setAttribute("alt", "turret plate");
-	turretplateE50m.setAttribute("id", "turretplateE50m");
-	document.body.appendChild(turretplateE50m);
+	setTimeout(function() {
+		var turretplateE50m = document.createElement("IMG");
+		turretplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/front-turret-plate-e50m.png");
+		turretplateE50m.setAttribute("alt", "turret plate");
+		turretplateE50m.setAttribute("id", "turretplateE50m");
+		document.body.appendChild(turretplateE50m);
 
-	var sideplateE50m = document.createElement("IMG");
-	sideplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/side-plate-e50m.png");
-	sideplateE50m.setAttribute("alt", "side plate");
-	sideplateE50m.setAttribute("id", "sideplateE50m");
-	document.body.appendChild(sideplateE50m);
+		var sideplateE50m = document.createElement("IMG");
+		sideplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/side-plate-e50m.png");
+		sideplateE50m.setAttribute("alt", "side plate");
+		sideplateE50m.setAttribute("id", "sideplateE50m");
+		document.body.appendChild(sideplateE50m);
 
-	var upperplateE50m = document.createElement("IMG");
-	upperplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/upper-plate-e50m.png");
-	upperplateE50m.setAttribute("alt", "upper plate");
-	upperplateE50m.setAttribute("id", "upperplateE50m");
+		var upperplateE50m = document.createElement("IMG");
+		upperplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/upper-plate-e50m.png");
+		upperplateE50m.setAttribute("alt", "upper plate");
+		upperplateE50m.setAttribute("id", "upperplateE50m");
 	document.body.appendChild(upperplateE50m);
+	}, 9000);
 
 	//making the armor model function
-	e50mlowerplate = document.getElementById("lowerplateE50m");
-	e50mlowerplate.onclick=e50mlowerplateshot;
+	E50mturretplate = document.getElementById("turretplateE50m");
+	E50mturretplate.onclick=E50mturretplateshot;
 
-	e50msideplate = document.getElementById("sideplatee50m");
-	e50msideplate.onclick=e50msideplateshot;
+	E50msideplate = document.getElementById("sideplateE50m");
+	E50msideplate.onclick=E50msideplateshot;
 
-	e50mupperplate = document.getElementById("upperplatee50m");
-	e50mupperplate.onclick=e50mupperplateshot;
-}
-function e50msideplateshot(){
+	E50mupperplate = document.getElementById("upperplateE50m");
+	E50mupperplate.onclick=E50mupperplateshot;
 
 }
 function e50mupperplateshot(){
+	document.getElementById('button2').style.visibility='hidden';
+	document.getElementById('title').innerHTML='No! that\s a very thick part armor of this tank!';
+	setTimeout(function() {document.getElementById('title').innerHTML='Now he has a chance to shoot back!';}, 3000);
+	setTimeout(function() {document.body.style.backgroundImage = "url('background-imgs/levels/level-3/e50m-fired.png')";}, 6000);
+	setTimeout(function() {document.getElementById('title').innerHTML='He fired, but didn\'t blow us up!';}, 9000);
+	setTimeout(function() {document.getElementById('title').innerHTML='Let\'s hit him again!';}, 12000);
+	setTimeout(function() {document.body.style.backgroundImage = "url('background-imgs/levels/level-3/e50m-second-chance.png')";}, 9000);
 
+	lowerplateE50m.parentNode.removeChild(lowerplateE50m);
+	sideplatee50m.parentNode.removeChild(sideplatee50m);
+	upperplatee50m.parentNode.removeChild(upperplatee50m);
+
+	var hp = hp-1;
+
+	//loading the armor model
+	setTimeout(function() {
+		var turretplateE50m = document.createElement("IMG");
+		turretplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/front-turret-plate-e50m.png");
+		turretplateE50m.setAttribute("alt", "turret plate");
+		turretplateE50m.setAttribute("id", "turretplateE50m");
+		document.body.appendChild(turretplateE50m);
+
+		var sideplateE50m = document.createElement("IMG");
+		sideplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/side-plate-e50m.png");
+		sideplateE50m.setAttribute("alt", "side plate");
+		sideplateE50m.setAttribute("id", "sideplateE50m");
+		document.body.appendChild(sideplateE50m);
+
+		var upperplateE50m = document.createElement("IMG");
+		upperplateE50m.setAttribute("src", "script/tanks/axis-vehicles/E50(M)/second-chance/upper-plate-e50m.png");
+		upperplateE50m.setAttribute("alt", "upper plate");
+		upperplateE50m.setAttribute("id", "upperplateE50m");
+	document.body.appendChild(upperplateE50m);
+	}, 9000);
+
+	//making the armor model function
+	E50mturretplate = document.getElementById("turretplateE50m");
+	E50mturretplate.onclick=E50mturretplateshot;
+
+	E50msideplate = document.getElementById("sideplateE50m");
+	E50msideplate.onclick=E50msideplateshot;
+
+	E50mupperplate = document.getElementById("upperplateE50m");
+	E50mupperplate.onclick=E50mupperplateshot;
+}
+function e50msideplateshot(){
+	alert('That one would pen');
+}
+
+
+
+function E50mturretplateshot(){
+	if (Math.random() > 0.5){
+		alert('bigger');
+	}else{
+		alert('smaller');
+	}
+}
+function E50msideplateshot(){
+	alert("side");
+}
+function E50mupperplateshot(){
+	alert("upper");
 }
