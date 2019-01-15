@@ -1,0 +1,246 @@
+/*should prevent scrolling*/
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background-image: url("background-imgs/kranvagn-nature.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#button1,#button2,#button3,#retrybutton{
+	font-family: "franklin gothic heavy";
+	font-size: 40px;
+	font-weight: 80%;
+	background: linear-gradient(rgba(255,0,0,1), rgba(0,0,0,1));
+	border: 1px solid rgba(0,0,0,1);
+	height: 100px;
+	width: 200px;
+	background-color: red;
+	margin: 50px;
+	color: rgba(255,255,255,1);
+}
+#button1:hover,#button2:hover,#button3:hover,#retrybutton:hover{
+	font-weight: 90%;
+	background: linear-gradient(rgba(180,0,0,1), rgba(0,0,0,1));
+}
+#retrybutton{
+	position: relative;
+	top: -210px;
+}
+/*>--h1--<*/
+#title{
+	font-family: "arial black";
+	text-align: center;
+  	font-size: 75px;
+  	color: rgba("0,0,0,1");
+}
+/*>--p--<*/
+#description,#defeatdescription{
+	font-family: "kartika";
+	text-align: center;
+  	top: 400px;
+  	font-size: 40px;
+  	color: rgba("0,0,0,1");
+  	margin-left: 300px;
+  	margin-right: 300px;
+}
+#defeatdescription{
+	position: relative;
+	top: 400px;
+}
+#game-buttons{
+	position: relative;
+	top: 400px;
+	left: 50%;
+	margin-left: -400px;
+}
+/*<---tutorial--->*/
+#speechbubble1{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	width: 1000px;
+	margin-left: -500px;
+	transition: 1s;
+}
+#general{
+	height: 600px;
+	position: fixed;
+	left: -10px;
+	bottom: -17px;
+	transition: 1s;
+}
+/*<---tanks in the tutorial--->*/
+#Rpz{
+	position: relative;
+	top: -300px;
+	left: 50%;
+	margin-left: -302px;
+}
+#E50m{
+	position: relative;
+	top: -250px;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+}
+#Maus{
+	position: relative;
+	top: -230px;
+	left: 50%;
+	margin-left: -240px;
+	width: 480px;
+}
+#Jadgpanzer{
+	position: relative;
+	top: -50px;
+	left: 50%;
+	margin: -263px;
+}
+/*<---countdown--->*/
+#loadicon{
+	position: relative;
+	left: 50%;
+	top: -400px;
+	margin-left: -300px;
+}
+#loadcountdown{
+	position: relative;
+	top: -300px;
+	left: 500px;
+}
+/*<---level 1--->*/
+#europemap{
+	position: relative;
+	top: -450px;
+	left: 50%;
+	margin-left: -699px;
+	z-index: -1;
+}
+#map-title{
+	font-family: "arial black";
+	text-align: center;
+  	font-size: 75px;
+  	color: rgba("0,0,0,1");
+  	position: relative;
+  	top: -50px;
+}
+#map-description{
+	font-family: "kartika";
+	text-align: center;
+	position: relative;
+  	top: -50px;
+  	font-size: 40px;
+  	color: rgba("0,0,0,1");
+  	margin-left: 300px;
+  	margin-right: 300px;
+  	background-color: rgba(123, 175, 255, 0.5);
+}
+#sniperscope{
+	position: relative;
+	top: -700px;
+	left: 0px;
+	z-index: -1;
+}
+/*<--armor/hit model rheinmetall panzerwagen-->*/
+#cheeckplaterhz{
+	position: fixed;
+	top: 330px;
+	left: 720px;
+}
+#sideplaterhz{
+	position: absolute;
+	top: 570px;
+	left: 425px;
+}
+#deckplaterhz{
+	position: absolute;
+	top: 470px;
+	left: 680px;
+}
+#cheeckplaterhz,#sideplaterhz,#deckplaterhz{
+	opacity: 0;
+	transition: 1s;
+}
+#cheeckplaterhz:hover,#sideplaterhz:hover,#deckplaterhz:hover{
+	opacity: 1;
+	transition: 1s;
+}
+#cheeckbulletholethz{
+	position: absolute;
+	top: 400px;
+	left: 950px;
+}
+#sidebulletholethz{
+	position: absolute;
+	top: 600px;
+	left: 900px;
+}
+#deckbulletholerhz{
+	position: absolute;
+	top: 500px;
+	left: 900px;
+}
+#cheeckflamesrhz{
+	position: absolute;
+	top: -78px;
+	left: 875px;
+}
+#sideflamesrhz{
+	position: absolute;
+	top: 120px;
+	left: 820px;
+}
+#deckflamesrhz{
+	position: absolute;
+	top: 20px;
+	left: 825px;
+}
+#lowerplateE50m{
+	position: relative;
+	top: 42px;
+	left: 1060px;
+	transition: 1s;
+	opacity: 0.0;
+}
+#sideplatee50m{
+	position: relative;
+	top: 45px;
+	left: 580px;
+	transition: 1s;
+	opacity: 0.0;
+}
+#upperplatee50m{
+	position: relative;
+	top: -5px;
+	left: 475px;
+	transition: 1s;
+	opacity: 0.0;
+}
+#lowerplateE50m:hover,#sideplatee50m:hover,#upperplatee50m:hover{
+	transition: 1s;
+	opacity: 1.0;
+}
+#turretplateE50m{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transition: 1s;
+	opacity: 1.0;
+}
+#sideplateE50m{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transition: 1s;
+	opacity: 1.0;
+}
+#upperplateE50m{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transition: 1s;
+	opacity: 1.0;
+}

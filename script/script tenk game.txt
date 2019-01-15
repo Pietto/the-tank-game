@@ -1,0 +1,94 @@
+-tutorial system{
+penetration
+mobility c.t. armor explanation (fest=la slow=ha)
+difference ap(cr) and he(sh)
+flanking?
+final boss?
+teaches about the auto-loader (3 shells)
+}
+
+
+
+
+
+
+
+
+needs to be set:
+
+environment (cold war, ww3, ww2.5)
+nation
+goal(conqueror, survive)
+enemies/allies
+final boss? maus?/multiple?
+which front? (USSR?, spain? france? netherlands? denmark?)
+
+
+
+
+needs to be present once{
+artillery hit+explanation?
+}
+
+for sure:
+playing as: AMERICA
+against: axis powers (nazi germany)
+type of history: alternative/fictional
+time in history: ~1950
+time of year: mainly winter
+occupied terrain axis powers will be simular to that of the summer in '44
+
+
+
+scrpipt:
+
+
+*just came out of the hospital*
+congcratulations tanker, you will be the lucky commander to drive the kranvagn.
+even though this is the american army, you will fight for us in this swedish tank, this will be the only kranvagn to ever see combat.
+because you've been out of combat for so long, we will give you a small recruitment training to get you back into combat.
+---tutorial time---
+
+*after the tutorial you'll be shown a map of the axis powers in europe, click on denmark to start invading.
+
+
+tutorial{
+	this is a common german light tank, fast and la.
+	this is a maus
+	this is a tiger, outdated
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JS notes:
+
+
+
+var img1 = document.createElement("IMG");
+img1.setAttribute("src", "test.png");
+img1.setAttribute("alt", "alternative");
+img1.setAttribute("id", "test");
+document.body.appendChild(img1);
+
+
+
+	
+
+
+
+var img2 = document.createElement("IMG");
+img2.setAttribute("src", "test-2.png");
+img2.setAttribute("alt", "alternative");
+img2.setAttribute("id", "test2");
+document.body.appendChild(img2);
