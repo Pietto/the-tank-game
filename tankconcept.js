@@ -569,14 +569,14 @@ function e50mupperplateshot(){
 	}, 9000);
 
 	//making the armor model function
-	E50mturretplate = document.getElementById("turretplateE50m");
-	E50mturretplate.onclick=E50mturretplateshot;
+	E50mturretplate1 = document.getElementById("turretplateE50m");
+	E50mturretplate1.onclick=E50mturretplateshot;
 
-	E50msideplate = document.getElementById("sideplateE50m");
-	E50msideplate.onclick=E50msideplateshot;
+	E50msideplate1 = document.getElementById("sideplateE50m");
+	E50msideplate1.onclick=E50msideplateshot;
 
-	E50mupperplate = document.getElementById("upperplateE50m");
-	E50mupperplate.onclick=E50mupperplateshot;
+	E50mupperplate1 = document.getElementById("upperplateE50m");
+	E50mupperplate1.onclick=E50mupperplateshot;
 }
 function e50msideplateshot(){
 	alert('That one would pen');
