@@ -2,7 +2,7 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	overflow: hidden;
+	overflow: hidden; /*custom cursor???*/
 }
 body{
 	background-image: url("background-imgs/kranvagn-nature.jpg");
@@ -12,7 +12,6 @@ body{
 #button1,#button2,#button3,#retrybutton{
 	font-family: "franklin gothic heavy";
 	font-size: 40px;
-	font-weight: 80%;
 	background: linear-gradient(rgba(255,0,0,1), rgba(0,0,0,1));
 	border: 1px solid rgba(0,0,0,1);
 	height: 100px;
@@ -22,7 +21,6 @@ body{
 	color: rgba(255,255,255,1);
 }
 #button1:hover,#button2:hover,#button3:hover,#retrybutton:hover{
-	font-weight: 90%;
 	background: linear-gradient(rgba(180,0,0,1), rgba(0,0,0,1));
 }
 #retrybutton{
@@ -34,7 +32,7 @@ body{
 	font-family: "arial black";
 	text-align: center;
   	font-size: 75px;
-  	color: rgba("0,0,0,1");
+  	color: rgba(0,0,0,1);
 }
 /*>--p--<*/
 #description,#defeatdescription{
@@ -42,7 +40,7 @@ body{
 	text-align: center;
   	top: 400px;
   	font-size: 40px;
-  	color: rgba("0,0,0,1");
+  	color: rgba(0,0,0,1);
   	margin-left: 300px;
   	margin-right: 300px;
 }
@@ -123,7 +121,7 @@ body{
 	font-family: "arial black";
 	text-align: center;
   	font-size: 75px;
-  	color: rgba("0,0,0,1");
+  	color: rgba(0,0,0,1);
   	position: relative;
   	top: -50px;
 }
@@ -133,7 +131,7 @@ body{
 	position: relative;
   	top: -50px;
   	font-size: 40px;
-  	color: rgba("0,0,0,1");
+  	color: rgba(0,0,0,1);
   	margin-left: 300px;
   	margin-right: 300px;
   	background-color: rgba(123, 175, 255, 0.5);
@@ -167,7 +165,9 @@ body{
 #cheeckplaterhz:hover,#sideplaterhz:hover,#deckplaterhz:hover{
 	opacity: 1;
 	transition: 1s;
+	cursor: crosshair;
 }
+/*<--hit effects rheinmetall panzerwagen-->*/
 #cheeckbulletholethz{
 	position: absolute;
 	top: 400px;
@@ -198,49 +198,215 @@ body{
 	top: 20px;
 	left: 825px;
 }
+/*<--armor/hit model E50M-->*/
 #lowerplateE50m{
 	position: relative;
-	top: 42px;
+	top: 62px;
 	left: 1060px;
 	transition: 1s;
 	opacity: 0.0;
 }
 #sideplatee50m{
 	position: relative;
-	top: 45px;
+	top: 65px;
 	left: 580px;
 	transition: 1s;
 	opacity: 0.0;
 }
 #upperplatee50m{
 	position: relative;
-	top: -5px;
+	top: 15px;
 	left: 475px;
 	transition: 1s;
 	opacity: 0.0;
 }
 #turretplateE50m{
 	position: relative;
-	top: 2px;
+	top: 22px;
 	left: 880px;
 	transition: 1s;
 	opacity: 0.0;
 }
-#sideplateE50m{
+#turretplatee50m2{
 	position: relative;
-	top: 120px;
+	top: 22px;
+	left: 880px;
+	transition: 1s;
+	opacity: 0.0;
+}
+#sideplatee50m2{
+	position: relative;
+	top: 140px;
 	left: 565px;
 	transition: 1s;
 	opacity: 0.0;
 }
-#upperplateE50m{
+#upperplatee50m2{
 	position: relative;
-	top: 100px;
+	top: 120px;
 	left: 470px;
-	transition: 1s;
+	transition: 2s;
 	opacity: 0.0;
 }
-#lowerplateE50m:hover,#sideplatee50m:hover,#upperplatee50m:hover,#turretplateE50m:hover,#sideplateE50m:hover,#upperplateE50m:hover{
-	transition: 1s;
+#lowerplateE50m:hover,#sideplatee50m:hover,#upperplatee50m:hover,#turretplateE50m:hover,#turretplatee50m2:hover,#sideplatee50m2:hover,#upperplatee50m2:hover{
 	opacity: 1.0;
+	cursor: crosshair;
+}
+/*<--armor/hit model JPZ-E100-->*/
+#lowerplatejpz1{
+	position: relative;
+	top: 124px;
+	left: 910px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#turretplatejpz1{
+	position: relative;
+	top: 57px;
+	left: 800px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#upperplatejpz1{
+	position: relative;
+	top: 105px;
+	left: 635px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#lowerplatejpz2{
+	position: relative;
+	top: 132px;
+	left: 870px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#turretplatejpz2{
+	position: relative;
+	top: 20px;
+	left: 735px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#upperplatejpz2{
+	position: relative;
+	top: 107px;
+	left: 516px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#lowerplatejpz1:hover,#turretplatejpz1:hover,#upperplatejpz1:hover,#lowerplatejpz2:hover,#turretplatejpz2:hover,#upperplatejpz2:hover{
+	opacity: 1.0;
+	cursor: crosshair;
+}
+/*<--armor/hit model Maus-->*/
+#sideplatemaus1{
+	position: relative;
+	top: 95px;
+	left: 812px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#turretplatemaus1{
+	position: relative;
+	top: 7px;
+	left: 615px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#upperplatemaus1{
+	position: relative;
+	top: 58px;
+	left: 665px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#cheeksplatemaus2{
+	position: relative;
+	top: 0px;
+	left: 862px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#sideplatemaus2{
+	position: relative;
+	top: 85px;
+	left: 660px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#upperplatemaus2{
+	position: relative;
+	top: 48px;
+	left: 625px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#cheeksplatemaus3{
+	position: relative;
+	top: -25px;
+	left: 870px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#sideplatemaus3{
+	position: relative;
+	top: 80px;
+	left: 685px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#upperplatemaus3{
+	position: relative;
+	top: 42px;
+	left: 646px;
+	transition: 2s;
+	opacity: 0.0;
+}
+#sideplatemaus1:hover,#turretplatemaus1:hover,#upperplatemaus1:hover#cheeksplatemaus2:hover,#sideplatemaus2:hover,#upperplatemaus2:hover,#cheeksplatemaus3:hover,#sideplatemaus3:hover,#upperplatemaus3:hover{
+	opacity: 1.0;
+	cursor: crosshair;
+}
+/*<--inventory item-->*/
+#inventoryItem{
+	position: absolute;
+	top: 715px;
+	left: 260px;
+	width: 30px;
+}
+/*<--medals endscreen-->*/
+#survivingsmedal{
+	position: absolute;
+	top: 39%;
+	left: 20%;
+	margin-left: -90px;
+	height: 180px;````
+}
+#geniusmedal{
+	position: absolute;
+	top: 39%;
+	left: 35%;
+	margin-left: -90px;
+	height: 180px;````
+}
+#tutorialmedalawarded{
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	margin-left: -90px;
+	height: 180px;````
+}
+#collectablemedalawarded{
+	position: absolute;
+	top: 39%;
+	left: 65%;
+	margin-left: -90px;
+	height: 180px;````
+}
+#allmedalsmedal{
+	position: absolute;
+	top: 39%;
+	left: 80%;
+	margin-left: -90px;
+	height: 180px;
 }
